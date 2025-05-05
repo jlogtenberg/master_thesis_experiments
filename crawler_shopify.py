@@ -19,7 +19,7 @@ class ShopifyCrawler(ShopCrawler):
 	def __init__(self, *args, **kwargs):
 		super().__init__(*args, **kwargs)
 
-	def create_form_filling_task(self, website):
+	def create_checkout_task(self, website):
 		"""Returns the prompt that is the responsible for navigating through checkout and filling in the correct information in checkout forms"""
 		return f"""
 		Navigate to checkout and fill in the all the form fields. The task is complete once all the information is accepted and the form has been submitted.
