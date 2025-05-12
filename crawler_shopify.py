@@ -42,11 +42,10 @@ class ShopifyCrawler(ShopCrawler):
 		- ZIP Code: {self.profile['zip_code']}
 		- City: {self.profile['city']}
 		- Province: {self.profile['province']}
-		- Phone Number: {self.profile['country_code']}{self.general['phone_number'][1:]}
 		- Address: {self.profile['street']} {self.profile['house_number']}
 		- ZIP Code: {self.profile['zip_code']}
 		- City: {self.profile['city']}
-		- Phone Number: {self.profile['country_code']}{self.general['phone_number'][1:]}
+		- Phone Number: {self.profile['international_format']}
 
 		# PAYMENT INFORMATION
 		For payment options, choose credit card. Use the following information:

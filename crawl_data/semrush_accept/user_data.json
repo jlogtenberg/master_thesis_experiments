@@ -6,7 +6,6 @@
         "email_prefix": "dlauterbachsa",
         "email_suffix": "gmail.com",
         "password": "Password123!",
-        "phone_number": "0610666475",
         "date_of_birth": "1st of January, 2000",
         "credit_card_number": "5127 8809 9999 9990",
         "credit_card_expiry_month": "03",
@@ -16,6 +15,8 @@
     "profile": {
         "dutch": {
             "country_code": "+31",
+            "local_format": "0610666475",
+            "international_format": "+31610666475",
             "street": "Toernooiveld",
             "house_number": "200",
             "zip_code": "6525EC",
@@ -26,6 +27,8 @@
         },
         "german": {
             "country_code": "+49",
+            "local_format": "0610666475",
+            "international_format": "+49610666475",
             "street": "Unter Den Linden",
             "house_number": "6",
             "zip_code": "10117",
@@ -36,6 +39,8 @@
         },
         "french": {
             "country_code": "+33",
+            "local_format": "0610666475",
+            "international_format": "+33610666475",
             "street": "Rue Victor Cousin",
             "house_number": "1",
             "zip_code": "75005",
@@ -46,6 +51,8 @@
         },
         "spanish": {
             "country_code": "+34",
+            "local_format": "610666475",
+            "international_format": "+34610666475",
             "street": "Carrer de la Immaculada",
             "house_number": "2",
             "zip_code": "08017",
@@ -56,6 +63,8 @@
         },
         "italian": {
             "country_code": "+39",
+            "local_format": "01234567890",
+            "international_format": "+3901234567890",
             "street": "Piazzale Aldo Moro",
             "house_number": "5",
             "zip_code": "00185",
@@ -66,6 +75,8 @@
         },
         "swedish": {
             "country_code": "+46",
+            "local_format": "0123456789",
+            "international_format": "+46123456789",
             "street": "Universitetsplatsen",
             "house_number": "1",
             "zip_code": "40530",

@@ -63,6 +63,13 @@ class ShopCrawler:
 			temperature=0.0
 		)
 
+	def initialize_planner(self, api_key) -> ChatGoogleGenerativeAI:
+		return ChatGoogleGenerativeAI(
+			model='gemini-2.0-flash', 
+			api_key=SecretStr(api_key),
+			temperature=0.0
+		)
+
 	def get_system_prompt(self):
 		"""Return the system prompt from the hard-coded path"""
 		with open('system_prompt.txt', 'r', encoding='utf-8') as file:
@@ -77,7 +84,7 @@ class ShopCrawler:
 
 		# Initilization of the agent and planner
 		agent = self.initialize_llm(api_key_agent)
-		planner = self.initialize_llm(api_key_planner)
+		planner = self.initialize_planner(api_key_planner)
 
 		return agent, planner
 
@@ -355,7 +362,8 @@ class ShopCrawler:
 		- Email address: {self.general['email_prefix']}+{website}@{self.general['email_suffix']}
 		- Password: {self.general['password']}
 		- Country Code: {self.profile['country_code']}
-		- Phone Number: {self.general['phone_number']}
+		- Phone Number: {self.profile['local_format']}
+		- Country Code + Phone Number: {self.profile['international_format']}
 		- Date of birth: {self.general['date_of_birth']} (use the format the website requires, typing in the date might required entering day, month and year one by one)
 
 		- Street: {self.profile['street']}

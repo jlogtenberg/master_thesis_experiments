@@ -1,2 +1,5 @@
 .env
 /__pycache__
+/crawl_data
+/crawl_data
+rate_limiter.py
