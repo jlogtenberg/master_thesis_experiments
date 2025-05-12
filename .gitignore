@@ -1,5 +1,6 @@
 .env
 /__pycache__
-/crawl_data
-/crawl_data
 rate_limiter.py
+/crawl_data/aftership_accept/data
+/crawl_data/aftership_decline/data
+/crawl_data/semrush_accept/data
