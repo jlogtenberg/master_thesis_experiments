@@ -1,5 +1,9 @@
 # Leveraging LLM-based autonomous web agents for measuring personal data exfiltration in checkout forms
 
+This repository contains the code for running the experiments. For the repository with the code for the analysis, go [here](https://github.com/jlogtenberg/master_thesis_analysis).
+
+# Files
+
 In this repository, you can find all the files that we have used to run the crawls. Let us start with a breakdown of the folders and files:
 
 - `crawl_data` contains the configurations are saved and where the crawl data will be saved during crawling.
